@@ -166,6 +166,8 @@ h3 {
 p {
     line-height: 1.1em;
     color: #333;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 td {
@@ -248,6 +250,74 @@ ul li{
 #toc_container li, #toc_container ul, #toc_container ul li{
     list-style: outside none none !important;
     font-size: 1em;
+}
+
+.cv_history {
+    display:inline-block;
+    background-color:rgba(230,230,230,0.3);
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid rgba(230,230,230,0.4);
+}
+
+.cv_bullet{
+    display: inline-block;
+    text-align: center;
+    width: 3em;
+    vertical-align: top;
+}
+
+.cv_history_content {
+    display:inline-block;
+    width: 100%;
+    padding-left: 3em;
+    margin-top: -1em;
+}
+
+.cv_title {
+    font-weight: bold;
+}
+
+.cv_date {
+    font-size: 0.8em;
+}
+
+.cv_notes {
+    display: inline-block;
+    font-size: 0.85em;
+    margin-right: 3em;
+    margin-top: 0.3em;
+}
+
+.cv_notes_title {
+    font-size: 1.1em;
+    color: rgba(80,80,80,1);
+    font-weight: bold;
+    margin-left: 1em;
+    margin-top: 0.2em;
+}
+
+.mini-table table, .mini-table th, .mini-table td {
+    border: none;
+    padding-top: 0.1em;
+    padding-left: 0em;
+    padding-bottom: 0.1em;
+    padding-right: 0.7em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.mini-table{
+    /*margin-left: 1.5em;*/
+    border:none;
+    width: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mini-table th {
+    padding-bottom: 0.5em;
 }
 
 footer {
@@ -358,6 +428,7 @@ footer {
         word-wrap: break-word;
         font-size: 1em;
     }
+
     .footer-div-container{
         display:block;
         width:100%;
