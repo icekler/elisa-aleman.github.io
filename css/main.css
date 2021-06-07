@@ -6,6 +6,10 @@
     --title-color:#217f8b;
     --hyperlink-purple:#8B214A;
     --hyperlink-purple-visited:#8B217F;
+    --hyperlink-red:#c50f00;
+    --hyperlink-red-visited:#980c00;
+    --secondary-mustard:#ffc432;
+    --off-white: rgba(245,245,245,1);
 }
 
 html{
@@ -142,6 +146,72 @@ nav ul li:hover {
     background: var(--trans-pink-dark);
     color:#ffffff;
 }
+
+.nav-buttons{
+    display: flex;
+    width: 30em;
+    text-align: center;
+    align-items: stretch;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size:0.9em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-buttons .nav-btn-extra{
+    flex:1;
+    justify-content: space-between;
+    border:0.3em solid #FFF;
+}
+
+.nav-buttons .nav-btn-extra a{
+    display: inline-block;
+    height:100%;
+    width: 100%;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background-color: var(--hyperlink-red);
+    color:var(--off-white);
+}
+
+.nav-buttons .nav-btn-extra a:visited{
+    background-color: var(--hyperlink-red-visited);
+    color:var(--off-white);
+}
+
+.nav-buttons .nav-btn-extra a:hover{
+    text-decoration: none;
+    background-color: var(--secondary-mustard);
+    color: #FFF;
+}
+
+.nav-buttons .nav-btn-art{
+    flex:1;
+    justify-content: space-between;
+    border:0.3em solid #FFF;
+}
+
+.nav-buttons .nav-btn-art a{
+    display: inline-block;
+    height:100%;
+    width: 100%;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background-color: var(--trans-blue-dark);
+    color:#555555;
+}
+
+.nav-buttons .nav-btn-art a:visited{
+    background-color: var(--trans-blue-dark);
+    color:#555555;
+}
+
+.nav-buttons .nav-btn-art a:hover{
+    text-decoration: none;
+    background-color: var(--trans-pink-dark);
+    color: #FFF;
+}
+
 
 h1 {
     font-size: 2em;
