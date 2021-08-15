@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>{{ page.title }}</title>
+            <!-- link to main stylesheet -->
+            <link rel="stylesheet" type="text/css" href="/css/main.css">
+            <meta name="description" content="私の名前はElisa Claire Alemán Carreón、エリサ・クレアー・アレマン・カレオンです。メキシコ出身の留学生で、現在長岡技術科学大学に情報・制御工学の博士課程に所属している。日本に住んでいるのはもう４年目で、今は長岡技大で野中尋史先生の指導を受けて知識マイニング研究室で研究をしています。ニューラルネットワーク、人工知能やデータマイニングの研究をしています。現在私の興味ある研究分野は経営のためのテキストとデータマイニングや多言語の取り組みをしています。私の学会投稿実績とPDFファイルをこちらにご覧ください。">
+            <meta name="og:title" property="og:title" content="Elisa Claire Alemán Carreón: 学会投稿実績">
+            <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+            {% if site.google_analytics and jekyll.environment == 'production' %}
+            {% include analytics.html %}
+            {% endif %}
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <a href="/jp/about"><li>私について</li></a>
+                    <a href="/jp/cv"><li>履歴書</li></a>
+                    <a href="/jp/publications"><li>学術投稿実績</li></a>
+                </ul>
+            </nav>
+            <div id="language_nav">
+                <div id="language_nav_container">
+                    <ul>
+                        <a href="/"><li>English</li></a>
+                        <a href="/es"><li>Español</li></a>
+                        <a href="/jp"><li>日本語</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+            
+            {{ content }}
+            
+            </div><!-- /.container -->
+            <footer>
+                <div id="footer_band">
+                </div>
+                <div class="footer-div-container">
+                    <div class="footer-div">
+                        <span class="footer-title">研究関連</span>
+                            <ul>
+                                <li><a href="https://orcid.org/0000-0002-6437-0866">ORCID</a></li>
+                                <li><a href="https://www.researchgate.net/profile/Elisa_Aleman_Carreon">ResearchGate</a></li>
+                                <li><a href="http://www.researcherid.com/rid/O-7561-2018">ResearcherID</a></li>
+                                <li><a href="https://publons.com/a/1547646">Publons</a></li>
+                                <li><a href="https://www.mendeley.com/profiles/elisa-alemn-carren/">Mendeley</a></li>
+                                <li><a href="https://scholar.google.com/citations?user=LrgnougAAAAJ&sortby=pubdate">GoogleScholar</a></li>
+                                <li><a href="https://github.com/elisa-aleman">GitHub</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-div">
+                        <span class="footer-title">ナビゲーション</span>
+                        <ul>
+                            <li><a href="/jp/about">私について</a></li>
+                            <li><a href="/jp/cv">履歴書</a></li>
+                            <li><a href="/jp/publications">学術投稿実績</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-div">
+                        <span class="footer-title">言語</span>
+                        <ul>
+                            <li><a href="/">English</a></li>
+                            <li><a href="/es">Español</a></li>
+                            <li><a href="/jp">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>

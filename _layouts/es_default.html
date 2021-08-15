@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>{{ page.title }}</title>
+            <!-- link to main stylesheet -->
+            <link rel="stylesheet" type="text/css" href="/css/main.css">
+            <meta name="description" content="Mi nombre es Elisa Claire Alemán Carreón. Soy una estudiante internacional de doctorado nacida en México, y actualmente curso el doctorado en Ciencia de Información e Ingeniería de Control en la Universidad Tecnológica de Nagaoka, en Japón. Mi investigación es sobre Redes Neurales Artificiales, Inteligencia Artificial y Minado de Datos. Mis intereses de investigación actuales son de Minado de Texto y Datos para propósitos empresariales, así como aplicaciones multilinguales. Vea mi lista de publicaciones y PDFs aquí.">
+            <meta name="og:title" property="og:title" content="Elisa Claire Alemán Carreón: publicaciones">
+            <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+            {% if site.google_analytics and jekyll.environment == 'production' %}
+            {% include analytics.html %}
+            {% endif %}
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <a href="/es/about"><li>Sobre mí</li></a>
+                    <a href="/es/cv"><li>Curriculum Vitae</li></a>
+                    <a href="/es/publications"><li>Publicaciones Académicas</li></a>
+                </ul>
+            </nav>
+            <div id="language_nav">
+                <div id="language_nav_container">
+                    <ul>
+                        <a href="/"><li>English</li></a>
+                        <a href="/es"><li>Español</li></a>
+                        <a href="/jp"><li>日本語</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+            
+            {{ content }}
+            
+            </div><!-- /.container -->
+            <footer>
+                <div id="footer_band">
+                </div>
+                <div class="footer-div-container">
+                    <div class="footer-div">
+                        <span class="footer-title">Perfiles de investigación</span>
+                            <ul>
+                                <li><a href="https://orcid.org/0000-0002-6437-0866">ORCID</a></li>
+                                <li><a href="https://www.researchgate.net/profile/Elisa_Aleman_Carreon">ResearchGate</a></li>
+                                <li><a href="http://www.researcherid.com/rid/O-7561-2018">ResearcherID</a></li>
+                                <li><a href="https://publons.com/a/1547646">Publons</a></li>
+                                <li><a href="https://www.mendeley.com/profiles/elisa-alemn-carren/">Mendeley</a></li>
+                                <li><a href="https://scholar.google.com/citations?user=LrgnougAAAAJ&sortby=pubdate">GoogleScholar</a></li>
+                                <li><a href="https://github.com/elisa-aleman">GitHub</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-div">
+                        <span class="footer-title">Navegación</span>
+                        <ul>
+                            <li><a href="/es/about">Sobre mí</a></li>
+                            <li><a href="/es/cv">Curriculum Vitae</a></li>
+                            <li><a href="/es/publications">Publicaciones Académicas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-div">
+                        <span class="footer-title">Lenguajes</span>
+                        <ul>
+                            <li><a href="/">English</a></li>
+                            <li><a href="/es">Español</a></li>
+                            <li><a href="/jp">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>
